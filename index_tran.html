@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./tspacey/tspacey.css">
+        <link rel="icon" href="./tspacey/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="TSPACEY,软件管理工具">
+        <meta name="keywords" content="TSPACEY,软件管理工具">
+        <script type="text/javascript">
+            function handleSelectChange() {
+                var selectedValue = document.getElementById("custom-select").value;
+                if(selectedValue === 'zh'){
+                    window.location.href = "index.html";
+                }
+                if(selectedValue === 'tr'){
+                    window.location.href = "index_tran.html";
+                }
+                if(selectedValue === 'en'){
+                    window.location.href = "index_en.html";
+                }
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                // 获取select元素
+                var selectElement = document.getElementById("custom-select");
+
+                // 获取第一个option元素
+                var firstOption = selectElement.querySelector("option");
+
+                // 隐藏第一个option
+                if (firstOption) {
+                    firstOption.style.display = "none";
+                }
+            });
+        </script>
+        <title>TSPACEY - 極客方舟</title>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="./tspacey/tspacey.png">
+            <div class="menu">
+                <a href="https://tspacey.deelmind.com/" class="current">TSPACEY</a>
+                <select class="custom-select" id="custom-select" onchange="handleSelectChange()">
+                    <option value="zh">简体/繁體/EN</option>
+                    <option value="zh">简体中文</option>
+                    <option value="tr">繁體中文</option>
+                    <option value="en">ENGLISH</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <div class="content dark">
+        <div class="container">
+            <div class="main">
+                <div class="slogan">
+                    <div class="title" datalocale="mainTitle">軟體下載管理工具</div>
+                    <br>
+                    <div class="description">高效快速下載管理您所需的軟體</div>
+                    <br>
+                    <div class="description">
+                        網路安全/程式開發/日常辦公/影片後製/硬體開發
+                    </div>
+                    <div class="btns">
+                        <div id="main-download" class="btn main-download purn"><a target="_blank" href="https://deelmind.com/">極客方舟</a></div>
+                        <div class="btn light purn" ><a target="_blank" href="https://deelmind.com/">Bilibili</a></div>
+                        <div class="btn light purn" ><a target="_blank" href="https://deelmind.com/">YouTube</a></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img  src="./tspacey/show.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="platform">
+                <div>
+                    <div class="logo" style="background: url(./tspacey/windows.svg) center center no-repeat;"></div>
+                    <div class="remark">Windows 7, 10, 11</div>
+                    <div class="purn">
+                        <div class="download" class="purn"><a href="">Windows 64</a></div>
+                        <div class="download" class="purn">Windows 32</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo" style="background: url(./tspacey/pan.svg) center center no-repeat;"></div>
+                    <div class="remark">線上更多軟體</div>
+                    <div class="purn">
+                        <div class="download" class="purn"><a href="https://deelmind.org/" target="_blank">資源下載</a></div>
+                    </div>
+                </div>
+                <div class="purn">
+                    <div class="logo" style="background: url(./tspacey/apple.svg) center center no-repeat;"></div>
+                    <div class="remark" class="purn">macOS 10.15+</div>
+                    <div class="download" class="purn">MacOS Intel</div>
+                    <div class="download" class="purn">Apple(M1、M2)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="tspacey-input">
+                <a href="https://deelmind.org/" target="_blank">
+                    <img style=" width: 100%;" src="./tspacey/tspacey-main.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <div>
+                <div class="footer-classify">聯繫我們</div>
+                <div><a target="_blank">WX：DeeLMind</a></div>
+                <div><a target="_blank">QQ：759256729</a></div>
+                <div><a target="_blank">Discord：DeeLMind</a></div>
+                <div><a href="https://t.me/DeeLMind" target="_blank">Telegram：DeeLMind</a></div>
+            </div>
+            <div>
+                <div class="footer-classify">付費服務</div>
+                <div><a href="https://deelmind.com/pay/" target="_blank">病毒清理</a></div>
+                <div><a href="https://deelmind.com/pay/" target="_blank">逆向分析</a></div>
+                <div><a href="https://deelmind.com/pay/" target="_blank">軟體開發</a></div>
+                <div><a href="https://deelmind.com/pay/" target="_blank">定制服務</a></div>
+            </div>
+            <div>
+                <div class="footer-classify">網路安全</div>
+                <div><a href="https://deelmind.com/" target="_blank">開源課程</a></div>
+                <div><a href="https://deelmind.com/pay/class/pentest/" target="_blank">付費課程</a></div>
+                <div><a href="https://pan.deelmind.com" target="_blank">更多軟體</a></div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="https://deelmind.com/" target="_blank">© 2023 TSPACEY - 極客方舟</a>
+            <a href="https://deelmind.com/" target="_blank">極客方舟|網路安全|逆向破解|AI安全|硬體安全|程式開發</a>
+        </div>
+    </div>
+</body>
+</html>
