@@ -33,6 +33,47 @@
                 }
             });
         </script>
+        <style>
+        .video {
+            display: flex;
+            flex-wrap: wrap; /* 自动换行，适配窄屏 */
+            justify-content: center;
+            gap: 12px;
+            padding: 16px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .video img {
+            flex: 1 1 45%; /* 自适应宽度，最小宽度约为45% */
+            max-width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* 悬停放大：仅桌面设备生效 */
+        @media (hover: hover) and (pointer: fine) {
+            .video img:hover {
+                transform: scale(2.05);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+        }
+
+        /* 移动端：上下排列更自然 */
+        @media (max-width: 600px) {
+            .video {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video img {
+                width: 90%;
+            }
+        }
+        </style>
         <title>TSPACEY - 極客方舟</title>
     </head>
 <body>
@@ -69,6 +110,7 @@
                 </div>
                 <div class="video">
                     <img  src="./tspacey/show.png">
+                    <img  src="./tspacey/showres.png">
                 </div>
             </div>
         </div>
